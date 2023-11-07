@@ -3,17 +3,13 @@
   font-family: "Markazi Text", serif;
   color: #F7F7FF;
   font-size: 24px;
-  margin: 0;
-  padding: 0;
-}
-
-* {
-  margin: 0;
+  margin: 1vw;
 }
 
 ul, ol {
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 
 h1 {
@@ -32,13 +28,12 @@ a {
 nav {
   display: flex;
   justify-content: space-between;
-  padding-right: 5%;
 }
 nav ul {
   display: flex;
   justify-content: start;
   align-items: flex;
-  column-gap: 6vw;
+  column-gap: 3vw;
 }
 nav ul li {
   font-size: 1.3rem;
@@ -47,7 +42,7 @@ nav ul li #home-logo {
   width: 40px;
 }
 nav ul li :hover {
-  color: #004643;
+  color: rgb(185, 223, 193);
 }
 nav ul li :active {
   color: #F7F7FF;
@@ -61,11 +56,17 @@ nav ul li :active {
 .container-1 .row-2 {
   display: flex;
 }
+.container-1 .row-1 :hover, .container-1 .row-2 :hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
 .container-1 .row-1 > article, .container-1 .row-2 > article {
   margin: 1%;
   padding: 2%;
   background-color: rgba(0, 0, 0, 0.116);
   border-radius: 6px;
+}
+.container-1 .row-1 > article :hover, .container-1 .row-2 > article :hover {
+  box-shadow: none;
 }
 
 footer {
