@@ -1,39 +1,88 @@
-body{
-    background-color: slategray;
-    font-family: 'Markazi Text', serif;
-    margin: 0;
-}
-ul, ol{
-    list-style-type: none;
-}
-h1{
-    font-size: 3rem;
+:root {
+  background-color: #74A57F;
+  font-family: "Markazi Text", serif;
+  color: #F7F7FF;
+  font-size: 24px;
+  margin: 0;
+  padding: 0;
 }
 
-h2{
-    font-size: 2rem;
-}
-nav > ul{
-    display:flex;
-    justify-content: center;
-    column-gap: 20px;
-
-}
-main.container1{
-    display:flex;
-    justify-content: center;
-    flex-direction: column;
-
-    .row-2{
-        display:flex;
-        flex-direction: row;
-    }
+* {
+  margin: 0;
 }
 
-footer{
-    display: flex;
-    justify-content: center;
+ul, ol {
+  list-style-type: none;
+  padding: 0;
 }
-#footer-logo{
-    width: 100px;
+
+h1 {
+  font-size: 3rem;
 }
+
+h2 {
+  font-size: 2rem;
+}
+
+a {
+  color: #F7F7FF;
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 5%;
+}
+nav ul {
+  display: flex;
+  justify-content: start;
+  align-items: flex;
+  column-gap: 6vw;
+}
+nav ul li {
+  font-size: 1.3rem;
+}
+nav ul li #home-logo {
+  width: 40px;
+}
+nav ul li :hover {
+  color: #004643;
+}
+nav ul li :active {
+  color: #F7F7FF;
+}
+
+.container-1 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.container-1 .row-2 {
+  display: flex;
+}
+.container-1 .row-1 > article, .container-1 .row-2 > article {
+  margin: 1%;
+  padding: 2%;
+  background-color: rgba(0, 0, 0, 0.116);
+  border-radius: 6px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10vw;
+  padding: 3%;
+}
+footer div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#footer-logo {
+  width: 70px;
+}
+
+/*# sourceMappingURL=styles.css.map */

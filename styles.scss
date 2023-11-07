@@ -1,0 +1,94 @@
+$primary-color: #004643;
+$secondary-color: #74A57F;
+$tertiary-color:#0C1618;
+$quaternary-color:#F7F7FF;
+$quinary-color:#0F0F0F;
+
+
+:root{
+    background-color: $secondary-color;
+    font-family: 'Markazi Text', serif;
+    color: $quaternary-color;
+    font-size: 24px;
+    margin: 0;
+    padding:0;
+}
+*{
+    margin:0;
+}
+ul, ol{
+    list-style-type: none;
+    padding:0;
+}
+h1{
+    font-size: 3rem;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+a{
+    color: $quaternary-color;
+    text-decoration: none;
+}
+
+nav {
+display:flex;
+justify-content: space-between;
+padding-right:5%;
+    ul{
+    display:flex;
+    justify-content: start;
+    align-items:flex;
+    column-gap: 6vw;
+    ;
+        li{
+        font-size:1.3rem;
+            #home-logo{
+                width:40px;
+            }
+            :hover{
+                color:$primary-color;
+             }
+            :active{
+                color:$quaternary-color;
+             }
+        }
+    }
+}
+
+.container-1{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+        .row-2{
+            display:flex;
+        }
+        .row-1 > article, .row-2 > article{
+            margin:1%;
+            padding: 2%;
+            background-color:rgba(0, 0, 0, 0.116);
+            border-radius:6px;
+
+        }
+}
+
+
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10vw;
+    padding:3%;
+    div{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+}
+#footer-logo{
+    width: 70px;
+}
